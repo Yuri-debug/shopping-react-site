@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "text": "BRANDED SHOE",
+      "img": "../../imgs/Layer 7.png"
+    },
+    {
+      "id": 1,
+      "text": "BRANDED TEES",
+      "img": "../../imgs/Layer 8.png"
+    },
+    {
+      "id": 2,
+      "text": "BRANDED TSHIRTS",
+      "img": "../../imgs/Layer 9.png"
+    },
+    {
+      "id": 3,
+      "text": "BRANDED WALLETS",
+      "img": "../../imgs/Layer 10.png"
+    },
+    {
+      "id": 4,
+      "text": "EMS WOMEN BAGS",
+      "img": "../../imgs/Layer 11.png"
+    },
+    {
+      "id": 5,
+      "text": "BRANDED CARGOS",
+      "img": "../../imgs/Layer 12.png"
+    }
+  ]
+}
