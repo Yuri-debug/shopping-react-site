@@ -7,6 +7,6 @@ const BannerDiv = styled.div`
   width: 70%;
   display: flex;
   justify-content: space-around;
-`
+`;
 
-export default BannerDiv
+export { BannerDiv };

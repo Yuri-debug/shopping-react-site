@@ -1,6 +1,6 @@
 import Container from "./Container";
 import Header from "./Header";
-import Banner from "./Banner";
+import { Banner } from "../../components/index";
 import Slider from "./Slider";
 import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
 import Products from "./Products/Products";

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ProductsSingleBlock from "./ProductsSingleBlock";
 import ProductsWrapper from "./ProductsWrapper";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const ProductsDiv = styled.div`
   width: 70%;

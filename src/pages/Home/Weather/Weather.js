@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WeatherDispatcher from "./WeatherDispatcher";
+import { useDispatch, useSelector } from "react-redux/es/exports";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -48,38 +48,45 @@ const AdditionalInfo = styled.div`
   justify-content: space-between;
 `;
 
-const Player = styled.div`
-  align-self: center;
-`;
-
 function Weather() {
+  const weatherData = useSelector((store) => store.weatherData);
+  const dispatch = useDispatch()
+  dispatch({type: 'LOAD_DATA'})
+
   return (
     <StyledDiv>
       <WeatherBlock>
-        <HeaderPara>Weather Today in {WeatherDispatcher()[0]}</HeaderPara>
+        <HeaderPara>
+          Weather Today in{" "}
+          {weatherData.location.name +
+            ", " +
+            weatherData.location.region +
+            ", " +
+            weatherData.location.country}
+        </HeaderPara>
         <TempretureBlock>
-          <p>{WeatherDispatcher()[1]} &#8451;</p>
+          <p>{weatherData.current.feelslike_c} &#8451;</p>
           <TemperturePara>Feels Like</TemperturePara>
         </TempretureBlock>
         <Line />
         <AdditionalInfo>
           <StyledPara>Humidity:</StyledPara>
-          <StyledPara> {WeatherDispatcher()[3]}%</StyledPara>
+          <StyledPara> {weatherData.current.humidity}%</StyledPara>
         </AdditionalInfo>
         <Line />
         <AdditionalInfo>
           <StyledPara>Wind:</StyledPara>
-          <StyledPara>{WeatherDispatcher()[4]} km/h</StyledPara>
+          <StyledPara>{weatherData.current.wind_kph} km/h</StyledPara>
         </AdditionalInfo>
         <Line />
         <AdditionalInfo>
           <StyledPara>Pressure:</StyledPara>
-          <StyledPara>{WeatherDispatcher()[5]} mb</StyledPara>
+          <StyledPara>{weatherData.current.pressure_mb} mb</StyledPara>
         </AdditionalInfo>
         <Line />
         <AdditionalInfo>
           <StyledPara>UV Index:</StyledPara>
-          <StyledPara>{WeatherDispatcher()[6]} of 10</StyledPara>
+          <StyledPara>{weatherData.current.uv_index} of 10</StyledPara>
         </AdditionalInfo>
       </WeatherBlock>
     </StyledDiv>
