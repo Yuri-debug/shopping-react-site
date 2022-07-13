@@ -3,8 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import Rating from "react-rating";
 
-import img1 from "../../../imgs/star1.png";
-import img2 from "../../../imgs/star2.png";
+import img1 from "../../../assets/star1.png";
+import img2 from "../../../assets/star2.png";
 import { useDispatch } from "react-redux";
 import { makeDelete } from "../../../redux/reducers/deleteItemReducer";
 import { setSum } from "../../../redux/reducers/sumReducer";

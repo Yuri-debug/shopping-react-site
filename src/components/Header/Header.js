@@ -4,8 +4,8 @@ import { TopLogo } from "./components/TopLogo";
 import { TopNavWrapper } from "./components/TopNavWrapper";
 import { TopNav } from "./components/TopNav";
 
-import logo from "../../imgs/Aditii.png";
-import cart from "../../imgs/Shape 2.png";
+import logo from "../../assets/Aditii.png";
+import cart from "../../assets/Shape 2.png";
 
 import styled from "styled-components";
 import React from "react";

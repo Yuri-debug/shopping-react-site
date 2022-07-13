@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import logo1 from "../../../imgs/Layer 3.png";
-import logo2 from "../../../imgs/Layer 5.png";
-import logo3 from "../../../imgs/Layer 6.png";
+import logo1 from "../../../assets/Layer 3.png";
+import logo2 from "../../../assets/Layer 5.png";
+import logo3 from "../../../assets/Layer 6.png";
 
-import buttonImg from "../../../imgs/Shape 3 copy.png";
+import buttonImg from "../../../assets/Shape 3 copy.png";
 
 const StyledButton = styled.button`
   border: 2px solid #ffffff;

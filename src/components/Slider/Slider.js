@@ -3,9 +3,9 @@ import { SingleSliderBlock } from "./components/SliderBlock";
 import { PrevButton } from "./components/PrevButton";
 import { NextButton } from "./components/NextButton";
 
-import img1 from "../../imgs/Layer 3.png";
-import img2 from "../../imgs/Layer 5.png";
-import img3 from "../../imgs/Layer 6.png";
+import img1 from "../../assets/Layer 3.png";
+import img2 from "../../assets/Layer 5.png";
+import img3 from "../../assets/Layer 6.png";
 import { useEffect, useState } from "react";
 
 const StyledSlider = styled.div`
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   padding: 25px 30px;
 `;
 
-function Slider(props) {
+function Slider() {
   let intialValue = 0;
 
   const [indx, setIndex] = useState(
