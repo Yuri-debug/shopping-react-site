@@ -1,12 +1,14 @@
-import Container from "./Container";
-import Header from "./Header";
-import { Banner } from "../../components/index";
-import Slider from "./Slider";
-import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
-import Products from "./Products/Products";
-import Footer from "./Footer/Footer";
-import FooterBottom from "./Footer/FooterBottom";
-import Weather from "./Weather/Weather";
+import {
+  Banner,
+  Container,
+  FeaturedProducts,
+  Footer,
+  FooterBottom,
+  Header,
+  Products,
+  Slider,
+  Weather,
+} from "../../components";
 
 function Home() {
   return (

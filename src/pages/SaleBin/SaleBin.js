@@ -1,14 +1,10 @@
-import Content from "./Content/Content";
-import Footer from "./Footer/Footer";
-import Header from "./Header";
+import { Content, Footer, FooterBottom, Header } from "../../components";
 
-import {useEffect, useState} from 'react'
-import FooterBottom from "../Home/Footer/FooterBottom";
+import { useEffect, useState } from "react";
 
 function SaleBin() {
   const [sum, setSum] = useState(Number(localStorage.getItem("sum")) || 0);
   const [isClicked, setClick] = useState(false);
-
 
   useEffect(() => {
     if (isClicked) {

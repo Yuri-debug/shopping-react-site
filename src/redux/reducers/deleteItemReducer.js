@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import dataJSON from "../../pages/Home/Products/data.json";
+import dataJSON from "../../components/Products/components/data.json";
 
 const deletItemReducer = createSlice({
   name: "index",
