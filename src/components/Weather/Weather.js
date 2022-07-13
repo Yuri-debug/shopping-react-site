@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux/es/exports";
+import { useEffect } from "react";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -51,7 +52,10 @@ const AdditionalInfo = styled.div`
 function Weather() {
   const weatherData = useSelector((store) => store.weatherData);
   const dispatch = useDispatch()
-  dispatch({type: 'LOAD_DATA'})
+  
+  useEffect(() => {
+    dispatch({type: "LOAD_DATA"})
+  }, [])
 
   return (
     <StyledDiv>
