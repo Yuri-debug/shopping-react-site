@@ -1,7 +1,4 @@
-import { BannerDiv } from "./components/BannerDiv";
-import { BannerImg } from "./components/BannerImg";
-import { BannerText } from "./components/BannerText";
-import { BannerWrapper } from "./components/BannerWrapper";
+import { BannerDiv, BannerImg, BannerText, BannerWrapper } from "./components";
 
 function Banner() {
   return (

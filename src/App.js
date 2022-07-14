@@ -1,7 +1,5 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
-import Home from "./pages/Home/Home";
-import SaleBin from "./pages/SaleBin/SaleBin";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home, SaleBin } from "./pages";
 
 function App() {
   return (
